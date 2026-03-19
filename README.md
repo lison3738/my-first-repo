@@ -17,3 +17,5 @@ feature/test-branch仓库上修改！
 
 第二次添加项目名称：my-first-repo；项目用途：GitHub小白入门练习；使用方法：克隆仓库后，修改文件并推送
 
+本项目已配置GitHub Actions自动化工作流，当代码推送到仓库时，会自动执行打印测试信息的操作，具体可查看仓库Actions选项卡。
+
