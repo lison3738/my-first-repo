@@ -1,0 +1,10 @@
+name: CI # 工作流名称，自定义，比如“自动化测试”
+on: [push] # 触发条件：代码推送（push）时触发
+jobs: # 任务集合
+  test: # 任务名称，自定义
+    runs-on: ubuntu-latest # 运行环境，默认用ubuntu系统
+    steps: # 任务步骤
+      - name: Checkout code # 步骤1：拉取仓库代码
+        uses: actions/checkout@v4 # 调用官方的“拉取代码”动作
+      - name: Print message # 步骤2：打印一句话
+        run: echo "Hello GitHub Actions! 小白的第一个自动化工作流成功运行！" # 要执行的命令，打印一句话
